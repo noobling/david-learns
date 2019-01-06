@@ -13,6 +13,10 @@
 			background-image: linear-gradient(to right, #a25b5b, #692e4c);
 			padding: 1.5em 2em;
 		}
+		
+		section {
+			padding: 1.5em 2em;
+		}
 
 		a {
 			text-decoration: none;
@@ -49,6 +53,29 @@
 		.header-bottom > a:hover {
 			color: white;
 		}
+		
+		.flex, .row {
+			display: flex;
+			margin-left: -10px;
+			margin-right: -10px;
+		}
+		
+		.col {
+			flex: 1;
+			padding: 10px;
+		}
+
+		.box {
+			background: #e3e3e3;
+			height: 100px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		
+		.justify-content-between {
+			justify-content: space-between;
+		}
 
 	</style>
 </head>
@@ -70,5 +97,30 @@
 		</div>
 		
 	</header>
+	
+	<section>
+		<div class="container">
+			<div class="row justify-content-between">
+				<div class="col"><div class="box">Somme Callout Text</div></div>
+				<div class="col"><div class="box">Somme Callout Text</div></div>
+				<div class="col"><div class="box">Somme Callout Text</div></div>
+				<div class="col"><div class="box">Somme Callout Text</div></div>
+			</div>
+
+			<div class="row justify-content-between">
+				<div class="col"><div class="box">Somme Callout Text</div></div>
+				<div class="col"><div class="box">Somme Callout Text</div></div>
+			</div>
+
+			<div class="row justify-content-between">
+				<div class="col"><div class="box">Somme Callout Text</div></div>
+				<div class="col"><div class="box">Somme Callout Text</div></div>
+				<div class="col"><div class="box">Somme Callout Text</div></div>
+				<div class="col"><div class="box">Somme Callout Text</div></div>
+				<div class="col"><div class="box">Somme Callout Text</div></div>
+				<div class="col"><div class="box">Somme Callout Text</div></div>
+			</div>
+		</div>
+	</section>
 </body>
 </html>
